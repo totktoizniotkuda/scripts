@@ -1,0 +1,9 @@
+local UIS = game:GetService("UserInputService")
+
+UIS.InputBegan:Connect(function(Input)
+if Input.KeyCode == Enum.KeyCode.V then
+			game.Players.LocalPlayer.Character.Head.Neck:Destroy()
+game.Players.LocalPlayer.Character.Head.NeckRigAttachment:Destroy()
+end
+end)
+end})
